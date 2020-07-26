@@ -56,3 +56,7 @@ A client once asked "Hey can you find me a nice radar chart lib. for the project
           dotList: [false, true],
         }}
       />
+ ```
+      
+
+**Special thanks to Lorenzo Spyna's article so i didn't have to make this library from scratch**
