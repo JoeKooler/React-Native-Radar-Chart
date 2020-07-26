@@ -1,13 +1,13 @@
 import React from "react";
 import Svg, { G, Path, Text, Polyline } from "react-native-svg";
 
-export default SpiderGraph = ({
+export default function RadarChart({
   graphSize,
   scaleCount,
   numberInterval,
   data,
   options,
-}) => {
+}) {
   const boxSize = graphSize * 3;
   const centerPos = boxSize / 2;
 
@@ -46,10 +46,8 @@ export default SpiderGraph = ({
 
   const shape = (columns) => (chartData, i) => {
     const data = chartData;
-    const colorCode = i == 0 ? "#FF0000" : "#0055FF";
-    const dot = i == 0 ? "20,20" : "0,0";
-    console.log(`i = ${i} and the color is ${colorCode}`);
-    console.log("eiei : " + JSON.stringify(data));
+    const colorCode = options.colorList[i];
+    const dot = options.dotList[i] == true ? "20,20" : "0,0";
     return (
       <Path
         key={`shape-${i}`}
@@ -159,4 +157,4 @@ export default SpiderGraph = ({
       <G transform={`translate(${centerPos},${centerPos})`}>{groups}</G>
     </Svg>
   );
-};
+}
