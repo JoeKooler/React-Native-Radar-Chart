@@ -1,7 +1,7 @@
 # React-Native-Radar-Chart
 A client once asked "Hey can you find me a nice radar chart lib. for the project? I haven't seen one yet" ...
 
-![ChartImage]()
+![ChartImage](https://i.imgur.com/PHsjg0n.jpg)
 
 # Usage
 1. Download ```SpiderGraph.js```
