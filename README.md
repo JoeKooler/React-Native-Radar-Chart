@@ -60,3 +60,5 @@ A client once asked "Hey can you find me a nice radar chart lib. for the project
       
 
 **Special thanks to Lorenzo Spyna's article so i didn't have to make this library from scratch**
+
+https://itnext.io/react-svg-radar-chart-a89d15760e8
